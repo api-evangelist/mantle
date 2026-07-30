@@ -1,8 +1,29 @@
 aid: mantle
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mantle.png
 name: Mantle
-description: 'Mantle is a company surfaced as a portfolio company of sierra-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Mantle is an AI-powered data platform for alternative assets management,
+  positioning itself as "alternative assets data, structured for the agentic
+  era." It offers two products: Mantle Equity, a cap table management platform
+  for founders and CFOs covering fundraising, SAFEs, stock options, 409A
+  valuations, and QSBS attestation; and Mantle Portal, a portfolio management
+  and insights product for institutional investors such as endowments and family
+  offices. Mantle converts fragmented documents into structured, trustworthy
+  data and layers AI workflows on top. The company is SOC 2 Type II compliant and
+  is backed by Sierra Ventures. As of this enrichment pass no public developer
+  API or API documentation was found; the product is delivered as a hosted SaaS
+  application with an end-user help center.
 url: https://raw.githubusercontent.com/api-evangelist/mantle/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +33,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Ai
+- Cap Table
+- Equity Management
+- Portfolio Management
+- Alternative Assets
+- Fintech
+- SaaS
+- 409A Valuation
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +53,26 @@ maintainers:
 common:
 - type: Website
   url: https://withmantle.com/
+- type: Documentation
+  url: https://withmantle.com/help
+- type: Blog
+  url: https://blog.withmantle.com/
+- type: Pricing
+  url: https://withmantle.com/equity/pricing
+- type: Support
+  url: https://withmantle.com/contact
+- type: TermsOfService
+  url: https://withmantle.com/resources/terms-of-use
+- type: PrivacyPolicy
+  url: https://withmantle.com/resources/privacy-policy
+- type: Compliance
+  url: https://withmantle.com/security
+- type: Conformance
+  url: conformance/mantle-conformance.yml
+- type: DomainSecurity
+  url: security/mantle-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1
