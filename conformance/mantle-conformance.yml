@@ -1,0 +1,16 @@
+generated: '2026-07-20'
+method: searched
+source: https://withmantle.com/security
+docs: https://blog.withmantle.com/mantle-achieves-soc-2-type-2-compliance/
+standards:
+- id: soc2-type2
+  conforms: true
+  evidence: Mantle security page and blog announce SOC 2 Type II compliance (AICPA standards).
+- id: tls
+  conforms: true
+  evidence: 256-bit TLS encryption for data in transit; live probe observed TLSv1.3 + HSTS.
+notes: >-
+  Mantle is a hosted SaaS platform (Mantle Equity cap-table management and Mantle
+  Portal portfolio management). No public API surface was found, so cross-cutting
+  API standards (OAuth2/OIDC, RFC 9457, pagination, idempotency) are not
+  assessable. The only published compliance posture is SOC 2 Type II.
