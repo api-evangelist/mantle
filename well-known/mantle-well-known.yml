@@ -2,10 +2,15 @@ generated: '2026-07-20'
 method: probed
 host: https://withmantle.com
 source: live /.well-known/ probes
-documents:
-- path: /.well-known/security.txt
-  status: 404
-notes: >-
-  No /.well-known/ discovery documents were served (security.txt returned 404).
-  Absence recorded as valid data; no WellKnown pointer emitted since nothing
-  returned 200.
+notes: No /.well-known/ discovery documents were served (security.txt returned 404). Absence recorded
+  as valid data; no WellKnown pointer emitted since nothing returned 200.
+hosts:
+- host: https://withmantle.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
