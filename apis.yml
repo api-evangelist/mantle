@@ -50,7 +50,7 @@ tags:
 - Artificial Intelligence
 - Cap Table
 - Equity Management
-- Portfolio-Management
+- Portfolio Management
 - Alternative Assets
 - Fintech
 - Software-as-a-Service
@@ -65,6 +65,7 @@ tags_raw:
 - Fintech
 - SaaS
 - 409A Valuation
+- Portfolio-Management
 apis: []
 maintainers:
 - FN: Kin Lane
