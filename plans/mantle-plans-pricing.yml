@@ -1,0 +1,49 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://withmantle.com/equity/pricing
+sources:
+- https://withmantle.com/equity/pricing
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: tiered-subscription
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-07'
+published: true
+note: Cap table software tiers; add-on listed as 'Additional 409A valuations $1,800'. Enterprise tier
+  is custom.
+plan_count: 4
+currency: USD
+plans:
+- name: Starter
+  price_text: $0
+  price: 0
+  currency: USD
+  period: year
+  included_quota: Unlimited stakeholders, Clerk AI assistant, SAFEs signing + templates, Vesting schedules,
+    Scenario modelling, Law firm integration, Cap table exports
+- name: Essentials
+  price_text: $1,200 / year
+  price: 1200
+  currency: USD
+  period: year
+  included_quota: All Starter features, plus concierge onboarding, issue & sign securities, custom SAFE
+    templates, board actions, in-platform option exercising, ISO/NSO reporting
+- name: Growth
+  price_text: $3,000 / year
+  price: 3000
+  currency: USD
+  period: year
+  included_quota: All Essentials features, plus annual 409A valuation, VIP support, SOC 2 Type 2 report
+    access
+  overage: Additional 409A valuations $1,800
+- name: Growth+ Enterprise
+  price_text: Custom
+  period: none
+  included_quota: All Growth features, plus equity administration, ASC 718, QSBS Attestation (US), CCPC
+    (CA)
